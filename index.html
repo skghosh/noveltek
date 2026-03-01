@@ -900,7 +900,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // ── Page routing ──
   function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -922,4 +922,13 @@
     }, { threshold: 0.1 });
     els.forEach(el => io.observe(el));
   }
-  observeFades
+  observeFades();
+
+  // ── Contact form ──
+  function submitForm() {
+    document.getElementById('form-content').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+</script>
+</body>
+</html>
