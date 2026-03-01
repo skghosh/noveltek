@@ -760,11 +760,11 @@
               <div class="team-member">
                 <div class="team-avatar">SG</div>
                 <div class="team-name">Sandeep Ghosh</div>
-                <div class="team-role">CEO,CTO & Founder</div>
+                <div class="team-role">CEO, CTO & Founder</div>
               </div>
               <div class="team-member">
-                <div class="team-avatar">IC</div>
-                <div class="team-name">Indrani Choudhury</div>
+                <div class="team-avatar">IG</div>
+                <div class="team-name">Indrani Chouhdury</div>
                 <div class="team-role">COO & Co-founder</div>
               </div>
             </div>
@@ -820,7 +820,7 @@
             <div class="contact-details">
               <div class="contact-detail">
                 <div class="icon">📧</div>
-                <div class="text"><strong>Email</strong>hello@noveltek.io</div>
+                <div class="text"><strong>Email</strong><a href="mailto:sandeep.ghosh@novelteks.onmicrosoft.com" style="color:var(--ink2);text-decoration:none;">sandeep.ghosh@novelteks.onmicrosoft.com</a></div>
               </div>
               <div class="contact-detail">
                 <div class="icon">📞</div>
@@ -900,7 +900,7 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // ── Page routing ──
   function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -922,11 +922,4 @@
     }, { threshold: 0.1 });
     els.forEach(el => io.observe(el));
   }
-  observeFades();
-
-  // ── Contact form ──
-  function submitForm() {
-    document.getElementById('form-content').style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-  }
-</script></body></html>
+  observeFades
