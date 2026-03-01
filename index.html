@@ -520,7 +520,7 @@
         <h1>We turn your <em>vision</em> into digital reality</h1>
         <p class="hero-desc">NovelTek Solutions Inc. guides enterprises through every stage of digital transformation — from strategy and architecture to deployment and scale.</p>
         <div class="hero-actions">
-          <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Start Free Trial</a>
+          <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Get in Touch</a>
           <a href="#" class="btn-ghost" onclick="showPage('services'); return false;">See what we offer</a>
         </div>
       </div>
@@ -636,11 +636,11 @@
   </section>
 
   <!-- CTA -->
-  <div class="cta-banner">
+    <div class="cta-banner">
     <div class="container">
-      <h2>Ready to build something great?</h2>
-      <p>Join over 40,000 teams already using Nexara to ship faster.</p>
-      <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Start your free trial →</a>
+      <h2>Ready to start your transformation?</h2>
+      <p>Let's talk about how NovelTek Solutions can move your business forward.</p>
+      <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Get in Touch →</a>
     </div>
   </div>
 
@@ -760,23 +760,13 @@
               <div class="team-member">
                 <div class="team-avatar">SG</div>
                 <div class="team-name">Sandeep Ghosh</div>
-                <div class="team-role">CEO & Co-founder</div>
+                <div class="team-role">CEO & Founder</div>
               </div>
-              <!--div class="team-member">
-                <div class="team-avatar">IG</div>
-                <div class="team-name">ML Ops</div>
+              <div class="team-member">
+                <div class="team-avatar">NT</div>
+                <div class="team-name">Your Name Here</div>
                 <div class="team-role">CTO & Co-founder</div>
               </div>
-              <div class="team-member">
-                <div class="team-avatar">PO</div>
-                <div class="team-name">Priya Osei</div>
-                <div class="team-role">Head of Product</div>
-              </div>
-              <div class="team-member">
-                <div class="team-avatar">JR</div>
-                <div class="team-name">Jonas Reyes</div>
-                <div class="team-role">Head of Engineering</div>
-              </div-->
             </div>
           </div>
 
@@ -830,10 +820,7 @@
             <div class="contact-details">
               <div class="contact-detail">
                 <div class="icon">📧</div>
-                <div class="text"><strong>Email</strong>
-                  <!--a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c34393030331c32332a3930283937723533">[email&#160;protected]</a-->
-                  <a href="mailto:sandeep.ghosh@novelteks.onmicrosoft.com">sandeep.ghosh@novelteks.onmicrosoft.com</a>
-                </div>
+                <div class="text"><strong>Email</strong>hello@noveltek.io</div>
               </div>
               <div class="contact-detail">
                 <div class="icon">📞</div>
@@ -913,7 +900,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // ── Page routing ──
   function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -935,4 +922,11 @@
     }, { threshold: 0.1 });
     els.forEach(el => io.observe(el));
   }
-  observeFades()
+  observeFades();
+
+  // ── Contact form ──
+  function submitForm() {
+    document.getElementById('form-content').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+</script></body></html>
